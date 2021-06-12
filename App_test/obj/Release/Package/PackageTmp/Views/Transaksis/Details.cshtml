@@ -1,0 +1,50 @@
+﻿@model TestApp.Models.Transaksi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaksi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Brg_nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brg_nama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comp_nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comp_nama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
